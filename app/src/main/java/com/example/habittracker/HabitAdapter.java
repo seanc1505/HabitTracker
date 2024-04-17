@@ -1,5 +1,6 @@
 package com.example.habittracker;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +54,10 @@ public class HabitAdapter extends RecyclerView.Adapter<HabitAdapter.HabitViewHol
         holder.button3.setText(habit.getButton3Label());
 
         // You can also set click listeners for the buttons here if needed
+    }
+
+    public void test(){
+        Log.i("TEST","here i am");
     }
 
     @Override
